@@ -4,6 +4,10 @@ Java 8 Features
 ## Introduction
 ### Imperative vs Declarative Programming
 
+### Examples
+* [ImperativeVsDeclarativeExample1](_src/main/java/org/example/java/ImperativeVsDeclarativeExample1)
+* [ImperativeVsDeclarativeExample2](_src/main/java/org/example/java/ImperativeVsDeclarativeExample2)
+
 <br><br>
 
 
@@ -20,8 +24,7 @@ Java 8 Features
   input                    body
   parameters
 ```
-
-Eg.
+Sample Representation
 ```
 Function<String, String> someString = (name) -> name.toUpperCase().concat("default");
            |        |                        |
@@ -30,6 +33,10 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
 
 ### Usages
   - mainly used to implement Functional Interfaces
+
+### Examples
+* [ComparatorLambdaExample](_src/main/java/org/example/java/lambda/ComparatorLambdaExample)
+* [RunnableLambdaExample](_src/main/java/org/example/java/lambda/RunnableLambdaExample)
 
 <br><br>
 
@@ -64,6 +71,11 @@ public interface Runnable {
 | Predicate      | BiPredicate
 | Function       | BiFunction, UnaryOperator, BinaryOperator
 | Supplier       |
+
+### Examples
+* [ConsumerExample](_src/main/java/org/example/java/functionalinterface/ConsumerExample)
+  * [BiConsumerExample](_src/main/java/org/example/java/functionalinterface/BiConsumerExample)
+
 
 <br><br>
 
