@@ -11,8 +11,6 @@ import java.util.function.BiConsumer;
  */
 public class BiConsumerExample
 {
-  static List<Student> studentList = StudentDatabase.getAllStudents();
-
   public static void main(String[] args)
   {
     /**
@@ -28,33 +26,14 @@ public class BiConsumerExample
 
 
     /**
-     * Use Case
+     * Sample Use Cases
      */
     BiConsumer<Integer, Integer> multiply = (intA, intB) -> System.out.println("Multiplication is: " + (intA * intB));
     multiply.accept(2, 3);
 
-    BiConsumer<Integer, Integer> divide   = (intA, intB) -> System.out.println("Division is: " + (intA * intB));
+    BiConsumer<Integer, Integer> divide   = (intA, intB) -> System.out.println("Division is: " + (intA / intB));
     divide.accept(6, 1);
 
-    // Chaining
-    System.out.println("\n======");
-    multiply.andThen(divide).accept(10, 2);
-
-    // Real world use cases
-    printNameAndActivities();
-  }
-
-  public static void printNameAndActivities()
-  {
-    System.out.println("\n===printNameAndActivities===");
-    BiConsumer<String, List<String>> biConsumer = (name, activities) ->
-      {
-        System.out.println(name + " : " + activities);
-      };
-
-    studentList.forEach((student) ->
-      {
-        biConsumer.accept(student.getName(), student.getActivities());
-      });
+    multiply.andThen(divide).accept(10, 2); // Chaining
   }
 }
