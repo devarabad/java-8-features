@@ -80,6 +80,10 @@ public interface Runnable {
 * [PredicateExample](src/main/java/org/example/java/functionalinterface/PredicateExample.java)
 * [PredicateStudentExample](src/main/java/org/example/java/functionalinterface/PredicateStudentExample.java)
 * [PredicateAndConsumerExample](src/main/java/org/example/java/functionalinterface/PredicateAndConsumerExample.java)
+* [BiPredicateExample](src/main/java/org/example/java/functionalinterface/BiPredicateExample.java)
+* [BiPredicateStudentExample](src/main/java/org/example/java/functionalinterface/BiPredicateStudentExample.java)
+* [FunctionExample](src/main/java/org/example/java/functionalinterface/FunctionExample.java)
+* [FunctionStudentExample](src/main/java/org/example/java/functionalinterface/FunctionStudentExample.java)
 
 <br><br>
 
