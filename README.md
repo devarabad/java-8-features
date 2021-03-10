@@ -84,6 +84,8 @@ public interface Runnable {
 * [BiPredicateStudentExample](src/main/java/org/example/java/functionalinterface/BiPredicateStudentExample.java)
 * [FunctionExample](src/main/java/org/example/java/functionalinterface/FunctionExample.java)
 * [FunctionStudentExample](src/main/java/org/example/java/functionalinterface/FunctionStudentExample.java)
+* [BiFunctionExample](src/main/java/org/example/java/functionalinterface/BiFunctionExample.java)
+* [BiFunctionStudentExample](src/main/java/org/example/java/functionalinterface/BiFunctionStudentExample.java)
 
 <br><br>
 
