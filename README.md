@@ -6,6 +6,7 @@ Java 8 Features
 
 <br><br>
 
+
 ## Lambda
   - is equivalent to a function (method) without a name
   - referred to as `Anonymous functions`
@@ -32,6 +33,7 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
 
 <br><br>
 
+
 ## Functional Interface
   * also called as Single Abstract Method Interfaces (SAM)
   * is an interface that has exactly one abstract method
@@ -53,14 +55,18 @@ public interface Runnable {
 ```
 
 ### Primary Interfaces
-  * Consumer    - BiConsumer
-  * Predicate   - BiPredicate
-  * Function    - BiFunction, UnaryOperator, BinaryOperator
-  * Supplier    -
 
 > **<!>** All new functional interfaces are available at `java.util.function` package
 
+| Interface      | Extension Interface
+|----------------|---------------------
+| Consumer       | BiConsumer
+| Predicate      | BiPredicate
+| Function       | BiFunction, UnaryOperator, BinaryOperator
+| Supplier       |
+
 <br><br>
+
 
 ## Streams
 
