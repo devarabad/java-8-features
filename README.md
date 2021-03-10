@@ -5,8 +5,8 @@ Java 8 Features
 ### Imperative vs Declarative Programming
 
 ### Examples
-* [ImperativeVsDeclarativeExample1](_src/main/java/org/example/java/ImperativeVsDeclarativeExample1)
-* [ImperativeVsDeclarativeExample2](_src/main/java/org/example/java/ImperativeVsDeclarativeExample2)
+* [ImperativeVsDeclarativeExample1](src/main/java/org/example/java/ImperativeVsDeclarativeExample1)
+* [ImperativeVsDeclarativeExample2](src/main/java/org/example/java/ImperativeVsDeclarativeExample2)
 
 <br><br>
 
@@ -35,8 +35,8 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
   - mainly used to implement Functional Interfaces
 
 ### Examples
-* [ComparatorLambdaExample](_src/main/java/org/example/java/lambda/ComparatorLambdaExample)
-* [RunnableLambdaExample](_src/main/java/org/example/java/lambda/RunnableLambdaExample)
+* [ComparatorLambdaExample](src/main/java/org/example/java/lambda/ComparatorLambdaExample)
+* [RunnableLambdaExample](src/main/java/org/example/java/lambda/RunnableLambdaExample)
 
 <br><br>
 
@@ -73,8 +73,8 @@ public interface Runnable {
 | Supplier       |
 
 ### Examples
-* [ConsumerExample](_src/main/java/org/example/java/functionalinterface/ConsumerExample)
-  * [BiConsumerExample](_src/main/java/org/example/java/functionalinterface/BiConsumerExample)
+* [ConsumerExample](src/main/java/org/example/java/functionalinterface/ConsumerExample)
+  * [BiConsumerExample](src/main/java/org/example/java/functionalinterface/BiConsumerExample)
 
 
 <br><br>
