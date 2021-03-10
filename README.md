@@ -74,7 +74,11 @@ public interface Runnable {
 
 ### Examples
 * [ConsumerExample](src/main/java/org/example/java/functionalinterface/ConsumerExample.java)
-  * [BiConsumerExample](src/main/java/org/example/java/functionalinterface/BiConsumerExample.java)
+* [ConsumerStudentExample](src/main/java/org/example/java/functionalinterface/ConsumerStudentExample.java)
+* [BiConsumerExample](src/main/java/org/example/java/functionalinterface/BiConsumerExample.java)
+* [BiConsumerStudentExample](src/main/java/org/example/java/functionalinterface/BiConsumerStudentExample.java)
+* [PredicateExample](src/main/java/org/example/java/functionalinterface/PredicateExample.java)
+* [PredicateStudentExample](src/main/java/org/example/java/functionalinterface/PredicateStudentExample.java)
 
 
 <br><br>
