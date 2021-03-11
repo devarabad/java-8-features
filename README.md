@@ -88,6 +88,8 @@ public interface Runnable {
 * [BiFunctionStudentExample](src/main/java/org/example/java/functionalinterface/BiFunctionStudentExample.java)
 * [UnaryOperatorExample](src/main/java/org/example/java/functionalinterface/UnaryOperatorExample.java)
 * [BinaryOperatorExample](src/main/java/org/example/java/functionalinterface/BinaryOperatorExample.java)
+* [SupplierExample](src/main/java/org/example/java/functionalinterface/SupplierExample.java)
+* [SupplierStudentExample](src/main/java/org/example/java/functionalinterface/SupplierStudentExample.java)
 
 <br><br>
 
