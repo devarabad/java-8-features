@@ -31,7 +31,7 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
          input    output               lambda expression
 ```
 
-### Usages
+### Usage
   - mainly used to implement Functional Interfaces
 
 ### Examples
@@ -90,6 +90,53 @@ public interface Runnable {
 * [BinaryOperatorExample](src/main/java/org/example/java/functionalinterface/BinaryOperatorExample.java)
 * [SupplierExample](src/main/java/org/example/java/functionalinterface/SupplierExample.java)
 * [SupplierStudentExample](src/main/java/org/example/java/functionalinterface/SupplierStudentExample.java)
+
+<br><br>
+
+
+## Method Reference
+  - simpify the implementation of Functional Interfaces
+  - shortcut for writing the Lambda Expressions
+  - refer a method in a class
+
+### Syntax
+```
+  ClassName::instance-methodName
+  ClassName::static-methodName
+  Instance::methodName
+```
+
+### Usage
+  - Lambda expressions referring to a method directly.
+
+```
+  Using Lambda:
+    Function<String, String> toUpperCase = (s) -> s.toUpperCase();
+
+  Using Method Reference:
+    Function<String, String> toUpperCase = String::toUpperCase();
+```
+
+<br><br>
+
+
+## Constructor Reference
+
+### Syntax
+```
+  ClassName::new
+```
+
+### Usage
+  - class should have empty constructor
+
+```
+  Correct:
+    Supplier<Student> studentSupplier = Student::new;
+
+  Invalid:
+    Student student = Student::new;
+```
 
 <br><br>
 
