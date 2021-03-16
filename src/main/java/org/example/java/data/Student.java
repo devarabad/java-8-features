@@ -67,9 +67,9 @@ public class Student
     this.activities = activities;
   }
 
-  public Student(String s)
+  public Student(String name)
   {
-    this.name = s;
+    this.name = name;
   }
 
   public String getGender()
