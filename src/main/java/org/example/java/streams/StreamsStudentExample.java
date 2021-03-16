@@ -23,7 +23,7 @@ public class StreamsStudentExample
 
 
     Predicate<Student> gradeLevelFilter = (student) -> student.getGradeLevel() >= 3;
-    Predicate<Student> gpaFilter        = (student) -> student.getGpa() >= 3.6;
+    Predicate<Student> gpaFilter        = (student) -> student.getGpa() >= 3.9;
 
     // List students where grade level is >= 3
     Map<String, Integer> studentFilterByGradeLevel =
