@@ -37,42 +37,9 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
 ### Local Variables
   - not allowed to use the same local variable name as `lambda parameters` or inside the `lambda body`
   - not allowed to `re-assign` a value to a local variable
-```
-  /*
-   * Not Allowed to use the same Local Variable
-   */
-  public void someMethod()
-  {
-    int i = 0;
-
-    Consumer<Integer> consumer = (i) ->         // compile error
-      {
-        System.out.println("Value is: " + i);
-      }
-  }
-
-  /*
-   * Not Allowed to re-assign a value to a Local Variable
-   */
-  public void someMethod()
-  {
-    String hello = "Hello";
-
-    Consumer<String> consumer = (s) ->
-      {
-        hello = "Re-assign Hello!";             // compile error
-      }
-  }
-```
 
 ### Instance Variables
   - no restrictions on `instance` variables
-```
-  public class Person
-  {
-
-  }
-```
 
 ### Examples
 * [ComparatorLambdaExample](src/main/java/org/example/java/lambda/ComparatorLambdaExample.java)
