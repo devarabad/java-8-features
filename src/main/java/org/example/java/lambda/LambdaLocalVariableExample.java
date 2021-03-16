@@ -11,7 +11,7 @@ public class LambdaLocalVariableExample
      */
     int i = 0;
 
-    // Consumer<Integer> localVariableInvalid1 = (i) ->
+    // Consumer<Integer> localVariableInvalid1 = (i) ->           // compile error
     //   {
     //     System.out.println("Value is : " + i);
     //   };
@@ -23,11 +23,7 @@ public class LambdaLocalVariableExample
 
     // Consumer<Integer> localVariableInvalid2 = (intValue) ->
     //   {
-    //     // Invalid
-    //     x = 2;
+    //     x = 2;                                                 // compile error
     //   };
-
-    // Valid
-    x = 2;
   }
 }

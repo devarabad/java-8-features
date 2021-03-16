@@ -8,9 +8,12 @@ public class LambdaInstanceVariableExample
 
   public void reassignInstanceVariable()
   {
+    /**
+     * No restrictions on Instance Variables
+     */
     Supplier<String> consumer = () ->
       {
-        hello = "HELLO!";
+        hello = "HELLO!";                           // re-assign new value to Instance Variable
         return hello;
       };
 
