@@ -182,7 +182,7 @@ public interface Runnable {
 ### How Stream API Works
 ![How Stream API Works](/assets/java-8-how-stream-api-works.png)
 
-### Collectins Vs Streams
+### Collections Vs Streams
 ![Collections vs Streams](/assets/java-8-collections-vs-streams.png)
 
 
