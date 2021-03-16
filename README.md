@@ -195,10 +195,21 @@ public interface Runnable {
 ### Collections Vs Streams
 ![Collections vs Streams](/assets/java-8-collections-vs-streams.png)
 
+### Debugging Stream Operations
+  - using `.stream().peek()`
+```
+  List<String> names = Arrays.asList("adam", "dan", "jenny");
+  names.stream().peek((name) ->
+    {
+      System.out.println(name);
+    });
+```
+
 ### Examples
 * [StreamsExample](src/main/java/org/example/java/streams/StreamsExample.java)
 * [StreamsStudentExample](src/main/java/org/example/java/streams/StreamsStudentExample.java)
 * [CollectionsVsStreams](src/main/java/org/example/java/streams/CollectionsVsStreams.java)
+* [StreamDebuggingExample](src/main/java/org/example/java/streams/StreamDebuggingExample.java)
 
 <br><br>
 
