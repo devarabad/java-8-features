@@ -179,8 +179,11 @@ public interface Runnable {
   names.parallelStream();   // creates a parallel stream
 ```
 
-### How Stream API Works?
-![Stream API](/assets/java-8-how-stream-api-works.png)
+### How Stream API Works
+![How Stream API Works](/assets/java-8-how-stream-api-works.png)
+
+### Collectins Vs Streams
+![Collections vs Streams](/assets/java-8-collections-vs-streams.png)
 
 
 <br><br>
