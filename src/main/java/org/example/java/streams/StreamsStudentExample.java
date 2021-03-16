@@ -21,9 +21,11 @@ public class StreamsStudentExample
     System.out.println(studentMapNameAndActivities);
 
 
-    // List students where grade level is >= 3
-    Predicate<Student> gradeLevelFilter = (student) -> student.getGradeLevel() >= 3;
 
+    Predicate<Student> gradeLevelFilter = (student) -> student.getGradeLevel() >= 3;
+    Predicate<Student> gpaFilter        = (student) -> student.getGpa() >= 3.6;
+
+    // List students where grade level is >= 3
     Map<String, Integer> studentFilterByGradeLevel =
       StudentDatabase.getAllStudents()
         .stream()
@@ -34,8 +36,6 @@ public class StreamsStudentExample
 
 
     // List students where grade level is >= 3 and gpa >= 3.9
-    Predicate<Student> gpaFilter = (student) -> student.getGpa() >= 3.9;
-
     Map<String, Integer> studentFilterByGradeLevelAndGpa =
       StudentDatabase.getAllStudents()
         .stream()
