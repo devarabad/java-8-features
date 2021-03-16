@@ -160,7 +160,7 @@ public interface Runnable {
 ## Streams
   - Stream is a sequence of elements which can be treated out of a collections such as `List` or `Arrays` or any kind of `I/O` resources and etc.
 
-### Streams API
+### Purpose
   - perform some operation on Collections
   - parallel operations are easy to perform without having to spawn multiple threads
   - can be used with arrays or any kind if I/O
@@ -179,3 +179,11 @@ public interface Runnable {
   names.parallelStream();   // creates a parallel stream
 ```
 
+### How Stream API Works?
+![Stream API](/assets/java-8-how-stream-api-works.png)
+
+
+<br><br>
+
+## References
+  - https://deloittedevelopment.udemy.com/course/modern-java-learn-java-8-features-by-coding-it
