@@ -1,6 +1,18 @@
 Java 8 Features
 ====================
 
+## Table of Contents
+  - [`Introduction`](#introduction)
+  - [`Lambda`](#lambda)
+  - [`Functional Interface`](#functional-interface)
+  - [`Method Reference`](#method-reference)
+  - [`Constructor Reference`](#constructor-reference)
+  - [`Streams`](#streams)
+  - [`References`](#references)
+
+<br><br>
+
+
 ## Introduction
 ### Imperative vs Declarative Programming
 
