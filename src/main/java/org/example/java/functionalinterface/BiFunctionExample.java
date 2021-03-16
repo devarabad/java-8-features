@@ -1,8 +1,6 @@
 package org.example.java.functionalinterface;
 
-import java.util.List;
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * @see java.util.function.BiFunction

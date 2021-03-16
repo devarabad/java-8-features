@@ -1,7 +1,5 @@
 package org.example.java.lambda;
 
-import java.util.function.Consumer;
-
 public class LambdaLocalVariableExample
 {
   public static void main(String[] args)

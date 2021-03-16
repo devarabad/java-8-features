@@ -1,9 +1,6 @@
 package org.example.java.functionalinterface;
 
-import org.example.java.data.Student;
-
 import java.util.function.BiPredicate;
-import java.util.function.Predicate;
 
 /**
  * @see java.util.function.BiPredicate
