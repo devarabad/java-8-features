@@ -170,19 +170,13 @@ public interface Runnable {
 ## Streams
   - Stream is a sequence of elements which can be treated out of a collections such as `List` or `Arrays` or any kind of `I/O` resources and etc.
 
-### Purpose
+### Streams API
   - perform some operation on Collections
   - parallel operations are easy to perform without having to spawn multiple threads
-  - can be used with arrays or any kind if I/O
+  - can be used with arrays or any kind of I/O
+  - stream operations can be performed either sequentially or parallel.
 
 ### Usage
-```
-  List<String> names = Arrays.asList("adam", "dan", "jenny");
-  names.stream();           // creates a stream
-```
-
-### Streams API Operations
-  - stream operations can be performed either sequentially or parallel.
 ```
   List<String> names = Arrays.asList("adam", "dan", "jenny");
   names.stream();           // creates a stream
@@ -190,12 +184,12 @@ public interface Runnable {
 ```
 
 ### How Stream API Works
-![How Stream API Works](/assets/java-8-how-stream-api-works.png)
+![alt text](assets/java-8-how-stream-api-works.png "How Stream API Works")
 
 ### Collections Vs Streams
-![Collections vs Streams](/assets/java-8-collections-vs-streams.png)
+![alt text](assets/java-8-collections-vs-streams.png "Collections vs Streams")
 
-### Debugging Stream Operations
+### Debugging Streams
   - using `.stream().peek()`
 ```
   List<String> names = Arrays.asList("adam", "dan", "jenny");
@@ -210,6 +204,20 @@ public interface Runnable {
 * [StreamsStudentExample](src/main/java/org/example/java/streams/StreamsStudentExample.java)
 * [CollectionsVsStreams](src/main/java/org/example/java/streams/CollectionsVsStreams.java)
 * [StreamDebuggingExample](src/main/java/org/example/java/streams/StreamDebuggingExample.java)
+
+### Streams API Operations
+
+**map()**
+
+**flatMap()**
+
+**distinct(), count(), sorted()**
+
+**filter()**
+
+**reduce()**
+
+**reduce()**
 
 <br><br>
 
