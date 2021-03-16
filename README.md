@@ -158,4 +158,24 @@ public interface Runnable {
 
 
 ## Streams
+  - Stream is a sequence of elements which can be treated out of a collections such as `List` or `Arrays` or any kind of `I/O` resources and etc.
+
+### Streams API
+  - perform some operation on Collections
+  - parallel operations are easy to perform without having to spawn multiple threads
+  - can be used with arrays or any kind if I/O
+
+### Usage
+```
+  List<String> names = Arrays.asList("adam", "dan", "jenny");
+  names.stream();           // creates a stream
+```
+
+### Streams API Operations
+  - stream operations can be performed either sequentially or parallel.
+```
+  List<String> names = Arrays.asList("adam", "dan", "jenny");
+  names.stream();           // creates a stream
+  names.parallelStream();   // creates a parallel stream
+```
 
