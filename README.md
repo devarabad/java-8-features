@@ -185,6 +185,10 @@ public interface Runnable {
 ### Collections Vs Streams
 ![Collections vs Streams](/assets/java-8-collections-vs-streams.png)
 
+### Examples
+* [StreamsExample](src/main/java/org/example/java/streams/StreamsExample.java)
+* [StreamsStudentExample](src/main/java/org/example/java/streams/StreamsStudentExample.java)
+* [CollectionsVsStreams](src/main/java/org/example/java/streams/CollectionsVsStreams.java)
 
 <br><br>
 
