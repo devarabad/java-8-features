@@ -6,7 +6,6 @@ Java 8 Features
 - [Method Reference](#method-reference)
 - [Constructor Reference](#constructor-reference)
 - [Streams](#streams)
-- [References](#references)
 
 <br><br>
 
