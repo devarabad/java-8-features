@@ -211,9 +211,7 @@ public interface Runnable {
   - Don't get confused this with Map Collection
 
 Example:
-
 [StreamsMapExample](src/main/java/org/example/java/streams/StreamsMapExample.java)
-
 
 #### flatMap()
 
