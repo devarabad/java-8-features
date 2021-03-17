@@ -206,17 +206,22 @@ public interface Runnable {
 
 ### Streams API Operations
 
-**map()**
+#### map()
+  - Convert(transform) one type to another
+  - Don't get confused this with Map Collection
 
-**flatMap()**
+Example:
 
-**distinct(), count(), sorted()**
+[StreamsMapExample](src/main/java/org/example/java/streams/StreamsMapExample.java)
 
-**filter()**
 
-**reduce()**
+#### flatMap()
 
-**reduce()**
+#### distinct(), count(), sorted()
+
+#### filter()
+
+#### reduce()
 
 <br><br>
 
