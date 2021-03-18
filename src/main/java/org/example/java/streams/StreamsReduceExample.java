@@ -1,5 +1,8 @@
 package org.example.java.streams;
 
+import org.example.java.data.Student;
+import org.example.java.data.StudentDatabase;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,6 +10,8 @@ import java.util.Optional;
 
 public class StreamsReduceExample
 {
+  static List<Student> studentList = StudentDatabase.getAllStudents();
+
   public static int performMultiplication(List<Integer> integerList)
   {
     /**
@@ -17,8 +22,8 @@ public class StreamsReduceExample
      *     First parameter   - default or initial value
      *     Second parameter  - BinaryOperator<T> (extends BiFunction<T, T, T>)
      */
-    return integerList
-             .stream()                             // in:List<Integer> -> out:Stream<Integer>
+    return  integerList
+              .stream()                             // in:List<Integer> -> out:Stream<Integer>
               /*  [1, 3, 5, 7]
                *
                *  a=1   [initial] , b=1 [from stream] -> result is 1*1  = 1
@@ -26,14 +31,21 @@ public class StreamsReduceExample
                *  a=3   [result]  , b=5 [from stream] -> result is 3*5  = 15
                *  a=15  [result]  , b=7 [from stream] -> result is 15*7 = 105
                */
-             .reduce(1, (a, b) -> a * b);
+              .reduce(1, (a, b) -> a * b);
   }
 
   public static Optional<Integer> performMultiplicationWithoutIdentity(List<Integer> integerList)
   {
-    return integerList
-             .stream()
-             .reduce((a, b) -> a * b);
+    return  integerList
+              .stream()
+              .reduce((a, b) -> a * b);
+  }
+
+  public static Optional<Student> getStudentWithHighestGpa()
+  {
+    return  studentList
+              .stream()
+              .reduce((s1, s2) -> s1.getGpa() > s2.getGpa() ? s1 : s2);
   }
 
   public static void main(String[] args)
@@ -54,8 +66,11 @@ public class StreamsReduceExample
     List<Integer> emptyIntegerList          = new ArrayList<>();
     Optional<Integer> optionalEmptyInteger  = performMultiplicationWithoutIdentity(emptyIntegerList);
     boolean emptyIntegerPresent             = optionalEmptyInteger.isPresent();
-    Integer optionalEmptyIntegerValue       = optionalEmptyInteger.get();
     System.out.println(emptyIntegerPresent);
-    System.out.println(optionalEmptyIntegerValue);
+    // Integer optionalEmptyIntegerValue       = optionalEmptyInteger.get();   // throws java.util.NoSuchElementException
+    // System.out.println(optionalEmptyIntegerValue);
+
+    Optional<Student> optionalStudent = getStudentWithHighestGpa();
+    optionalStudent.ifPresent(System.out::println);
   }
 }
