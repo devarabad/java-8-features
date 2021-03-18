@@ -249,6 +249,7 @@ public interface Runnable {
     - **Second parameter**  - `BinaryOperator<T> (extends BiFunction<T, T, T>)`
   - eg.
 [StreamsReduceExample](src/main/java/org/example/java/streams/StreamsReduceExample.java)
+, [StreamsMapReduceExample](src/main/java/org/example/java/streams/StreamsMapReduceExample.java)
 
 <br><br>
 
