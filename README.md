@@ -291,6 +291,18 @@ public interface Runnable {
   - eg.
 [StreamsMatchExample](src/main/java/org/example/java/streams/StreamsMatchExample.java)
 
+#### findFirst()
+  - Returns the first element it finds in the stream
+  - Returns the result of type **Optional**
+  - eg.
+[StreamsFindFirstExample](src/main/java/org/example/java/streams/StreamsFindFirstExample.java)
+
+#### findAny()
+  - Returns the first encountered element it finds in the stream
+  - Returns the result of type **Optional**
+  - eg.
+[StreamsFindAnyExample](src/main/java/org/example/java/streams/StreamsFindFirstExample.java)
+
 <br><br>
 
 ## References
