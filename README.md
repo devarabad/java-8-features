@@ -209,13 +209,25 @@ public interface Runnable {
 #### map()
   - Convert(transform) one type to another
   - Don't get confused this with Map Collection
-
-Example:
+  - Example:
 [StreamsMapExample](src/main/java/org/example/java/streams/StreamsMapExample.java)
 
 #### flatMap()
+  - Convert(transform) one type to another as like `map()` method
+  - Used in the context of Stream where each element in the stream represents multiple elements.
+    - Example: `Stream<List>`, `Stream<Array>`
+  - Example:
+[StreamsFlatMapExample](src/main/java/org/example/java/streams/StreamsFlatMapExample.java)
 
-#### distinct(), count(), sorted()
+#### distinct()
+  - Returns a stream with unique elements
+
+#### count()
+  - Returns a long with the total no of elements in the stream
+
+#### sorted()
+  - Sort the elements in the stream
+
 
 #### filter()
 
