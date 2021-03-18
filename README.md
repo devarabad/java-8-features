@@ -303,7 +303,12 @@ public interface Runnable {
   - eg.
 [StreamsFindAnyExample](src/main/java/org/example/java/streams/StreamsFindFirstExample.java)
 
+### Short Circuiting
+  - Does not have to iterate the whole stream to evaluate the result
+![alt text](assets/java-8-stream-short-circuiting-functions.png "Short Circuiting Functions")
+
 <br><br>
+
 
 ## References
   - https://deloittedevelopment.udemy.com/course/modern-java-learn-java-8-features-by-coding-it
