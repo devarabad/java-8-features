@@ -22,7 +22,7 @@ Java 8 Features
 
 ## Lambda
   - is equivalent to a function (method) without a name
-  - referred to as `Anonymous functions`
+  - referred to as **Anonymous functions**
   - are not tied to any class like a regular method
   - can be assigned to a variable and passed around
 
@@ -44,11 +44,11 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
   - mainly used to implement Functional Interfaces
 
 ### Local Variables
-  - not allowed to use the same local variable name as `lambda parameters` or inside the `lambda body`
-  - not allowed to `re-assign` a value to a local variable
+  - not allowed to use the same local variable name as **lambda parameters** or inside the **lambda body**
+  - not allowed to **re-assign** a value to a local variable
 
 ### Instance Variables
-  - no restrictions on `instance` variables
+  - no restrictions on **instance** variables
 
 ### Examples
 * [ComparatorLambdaExample](src/main/java/org/example/java/lambda/ComparatorLambdaExample.java)
@@ -62,7 +62,7 @@ Function<String, String> someString = (name) -> name.toUpperCase().concat("defau
 ## Functional Interface
   * also called as Single Abstract Method Interfaces (SAM)
   * is an interface that has exactly one abstract method
-  * `@FunctionalInterface` annotation
+  * **@FunctionalInterface** annotation
 
 Some examples of Functional Interface
   * `java.util.Comparator`
