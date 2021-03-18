@@ -3,7 +3,6 @@ package org.example.java.streams;
 import org.example.java.data.Student;
 import org.example.java.data.StudentDatabase;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
