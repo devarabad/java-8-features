@@ -75,7 +75,7 @@ public class StreamsReduceExample
 
 
     /**
-     * Be wary of the initial/default value as reduce may return different values
+     * Be wary of the initial/default value as reduce may return different values for empty and non-empty collections
      */
     /*
      * Non Empty List
