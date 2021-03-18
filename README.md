@@ -221,12 +221,18 @@ public interface Runnable {
 
 #### distinct()
   - Returns a stream with unique elements
+  - Example:
+[StreamsDistinctMapExample](src/main/java/org/example/java/streams/StreamsDistinctMapExample.java)
 
 #### count()
   - Returns a long with the total no of elements in the stream
+  - Example:
+[StreamsCountExample](src/main/java/org/example/java/streams/StreamsCountExample.java)
 
 #### sorted()
   - Sort the elements in the stream
+  - Example:
+[StreamsSortedExample](src/main/java/org/example/java/streams/StreamsSortedExample.java)
 
 
 #### filter()
