@@ -72,5 +72,29 @@ public class StreamsReduceExample
 
     Optional<Student> optionalStudent = getStudentWithHighestGpa();
     optionalStudent.ifPresent(System.out::println);
+
+
+    /**
+     * Be wary of the initial/default value as reduce may return different values
+     */
+    /*
+     * Non Empty List
+     */
+    List<Integer> nonEmptyList  = Arrays.asList(6, 7, 8, 9, 10);
+    List<Integer> emptyList     = new ArrayList<>();
+
+    int findMaxValue                          = nonEmptyList.stream().reduce(0, (x,y) -> x > y ? x : y);
+    Optional<Integer> findMaxValueOptional    = nonEmptyList.stream().reduce((x,y) -> x > y ? x : y);
+
+    int findMaxValue1                         = emptyList.stream().reduce(0, (x,y) -> x > y ? x : y);
+    Optional<Integer> findMaxValueOptional1   = emptyList.stream().reduce((x,y) -> x > y ? x : y);
+
+    System.out.println("== Non Empty List ==");
+    System.out.println("Max value is                  : " + findMaxValue);
+    System.out.println("Max value is (using Optional) : " + findMaxValueOptional);
+
+    System.out.println("== Empty List ==");
+    System.out.println("Max value is                  : " + findMaxValue1);
+    System.out.println("Max value is (using Optional) : " + findMaxValueOptional1);
   }
 }
