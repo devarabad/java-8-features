@@ -209,7 +209,7 @@ public interface Runnable {
 #### map()
   - Convert(transform) one type to another
   - Don't get confused this with Map Collection
-  - Example:
+  - eg.
 [StreamsMapExample](src/main/java/org/example/java/streams/StreamsMapExample.java)
 
 #### flatMap()
@@ -221,17 +221,17 @@ public interface Runnable {
 
 #### distinct()
   - Returns a stream with unique elements
-  - Example:
+  - eg.
 [StreamsDistinctMapExample](src/main/java/org/example/java/streams/StreamsDistinctMapExample.java)
 
 #### count()
   - Returns a long with the total no of elements in the stream
-  - Example:
+  - eg.
 [StreamsCountExample](src/main/java/org/example/java/streams/StreamsCountExample.java)
 
 #### sorted()
   - Sort the elements in the stream
-  - Example:
+  - eg.
 [StreamsSortedExample](src/main/java/org/example/java/streams/StreamsSortedExample.java)
 
 
