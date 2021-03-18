@@ -251,6 +251,18 @@ public interface Runnable {
 [StreamsReduceExample](src/main/java/org/example/java/streams/StreamsReduceExample.java)
 , [StreamsMapReduceExample](src/main/java/org/example/java/streams/StreamsMapReduceExample.java)
 
+#### max()
+  - Returns the maximum element of this stream according to the provided **Comparator**
+  - This is a **terminal operation**
+  - eg.
+[StreamsMaxExample](src/main/java/org/example/java/streams/StreamsMaxExample.java)
+
+#### min()
+  - Returns the minimum element of this stream according to the provided **Comparator**
+  - This is a **terminal operation**
+  - eg.
+[StreamsMinExample](src/main/java/org/example/java/streams/StreamsMinExample.java)
+
 <br><br>
 
 ## References
