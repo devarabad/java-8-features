@@ -233,7 +233,7 @@ public interface Runnable {
   - Sort the elements in the stream
   - eg.
 [StreamsSortedExample](src/main/java/org/example/java/streams/StreamsSortedExample.java)
-
+, [StreamsComparatorExample](src/main/java/org/example/java/streams/StreamsComparatorExample.java)
 
 #### filter()
 
