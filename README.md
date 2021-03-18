@@ -242,6 +242,13 @@ public interface Runnable {
 [StreamsFilterExample](src/main/java/org/example/java/streams/StreamsFilterExample.java)
 
 #### reduce()
+  - Used to reduce the contents of a stream to a single value
+  - This is a **terminal operation**
+  - It takes two parameters as an input
+    - **First parameter**   - default or initial value
+    - **Second parameter**  - `BinaryOperator<T>`
+  - eg.
+[StreamsReduceExample](src/main/java/org/example/java/streams/StreamsReduceExample.java)
 
 <br><br>
 
