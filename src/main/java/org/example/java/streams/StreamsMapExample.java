@@ -18,8 +18,8 @@ public class StreamsMapExample
     List<String> studentNames =
       studentList
         .stream()                         // List<Student>    -> Stream<Student>
-        .map(Student::getName)            // Stream<Student>  -> Stream<String>   : Student as an input (StudentObj) -> returns Student Name (String)
-        .map(String::toUpperCase)         // Stream<String>   -> Stream<String>   : String as an input (String) -> returns toUpperCase (String)
+        .map(Student::getName)            // Stream<Student>  -> Stream<String>   : Student (Obj) as an input -> returns Name (String)
+        .map(String::toUpperCase)         // Stream<String>   -> Stream<String>   : Name (String) as an input -> returns toUpperCase Name (String)
         .collect(Collectors.toList());    // Stream<String>   -> List<String>
 
     System.out.println(studentNames);
