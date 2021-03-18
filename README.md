@@ -236,6 +236,10 @@ public interface Runnable {
 , [StreamsComparatorExample](src/main/java/org/example/java/streams/StreamsComparatorExample.java)
 
 #### filter()
+  - Filters the elements in the stream
+  - Input to the filter is a **Predicate** Functional Interface
+  - eg.
+[StreamsFilterExample](src/main/java/org/example/java/streams/StreamsFilterExample.java)
 
 #### reduce()
 
