@@ -263,6 +263,16 @@ public interface Runnable {
   - eg.
 [StreamsMinExample](src/main/java/org/example/java/streams/StreamsMinExample.java)
 
+#### limit()
+  - limits the **"n"** number of elements to be processed in the stream
+  - eg.
+[StreamsLimitExample](src/main/java/org/example/java/streams/StreamsLimitExample.java)
+
+#### skip()
+  - skips the **"n"** number of elements from the stream
+  - eg.
+[StreamsSkipExample](src/main/java/org/example/java/streams/StreamsSkipExample.java)
+
 <br><br>
 
 ## References
