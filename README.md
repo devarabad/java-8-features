@@ -264,14 +264,32 @@ public interface Runnable {
 [StreamsMinExample](src/main/java/org/example/java/streams/StreamsMinExample.java)
 
 #### limit()
-  - limits the **"n"** number of elements to be processed in the stream
+  - Limits the **"n"** number of elements to be processed in the stream
   - eg.
 [StreamsLimitExample](src/main/java/org/example/java/streams/StreamsLimitExample.java)
 
 #### skip()
-  - skips the **"n"** number of elements from the stream
+  - Skips the **"n"** number of elements from the stream
   - eg.
 [StreamsSkipExample](src/main/java/org/example/java/streams/StreamsSkipExample.java)
+
+#### anyMatch()
+  - Returns **true** if anyone of the element matches the predicate, otherwise false
+  - Takes in a **Predicate** as an input and returns a **Boolean** as an output
+  - eg.
+[StreamsMatchExample](src/main/java/org/example/java/streams/StreamsMatchExample.java)
+
+#### allMatch()
+  - Returns **true** if all of the element matches the predicate, otherwise false
+  - Takes in a **Predicate** as an input and returns a **Boolean** as an output
+  - eg.
+[StreamsMatchExample](src/main/java/org/example/java/streams/StreamsMatchExample.java)
+
+#### noneMatch()
+  - Returns **true** if none of the element matches the predicate, otherwise false
+  - Takes in a **Predicate** as an input and returns a **Boolean** as an output
+  - eg.
+[StreamsMatchExample](src/main/java/org/example/java/streams/StreamsMatchExample.java)
 
 <br><br>
 
