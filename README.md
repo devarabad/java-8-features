@@ -216,7 +216,7 @@ public interface Runnable {
   - Convert(transform) one type to another as like `map()` method
   - Used in the context of Stream where each element in the stream represents multiple elements.
     - Example: `Stream<List>`, `Stream<Array>`
-  - Example:
+  - eg.
 [StreamsFlatMapExample](src/main/java/org/example/java/streams/StreamsFlatMapExample.java)
 
 #### distinct()
