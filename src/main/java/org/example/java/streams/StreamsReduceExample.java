@@ -15,7 +15,7 @@ public class StreamsReduceExample
      *  - This is a **terminal operation**
      *  - It takes two parameters as an input
      *     First parameter   - default or initial value
-     *     Second parameter  - BinaryOperator<T>
+     *     Second parameter  - BinaryOperator<T> (extends BiFunction<T, T, T>)
      */
     return integerList
              .stream()                             // in:List<Integer> -> out:Stream<Integer>
