@@ -348,36 +348,36 @@ public interface Runnable {
       ```
       IntStream.range(1,50) // Returns an IntStream of 49 elements, from 1 to 49
       ```
-      | Stream        | Supported |
-      |---------------|:---------:|
-      | IntStream     | yes       |
-      | LongStream    | yes       |
-      | DoubleStream  | no        |
   - eg.
-[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/numeric/NumericStreamsRangeExample.java)
 
 #### rangeClosed()
   - Returns a sequential ordered IntStream from **startInclusive** (inclusive) to **endInclusive**
       ```
       IntStream.rangeClosed(1,50) // Returns an IntStream of 50 elements, from 1 to 50
       ```
-      | Stream        | Supported |
-      |---------------|:---------:|
-      | IntStream     | yes       |
-      | LongStream    | yes       |
-      | DoubleStream  | no        |
   - eg.
-[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/numeric/NumericStreamsRangeExample.java)
 
-#### count()
-  -
+#### sum()
+  - Returns the sum of elements in the stream
   - eg.
-[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
 
-#### foreach()
-  -
+#### max()
+  - Returns an **Optional** describing the maximum element of the stream, or an empty optional if the stream is empty
   - eg.
-[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
+
+#### min()
+  - Returns an **Optional** describing the minimum element of the stream, or an empty optional if the stream is empty
+  - eg.
+[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
+
+#### average()
+  - Returns an `OptionalDouble` describing the arithmetic mean of elements of the stream, or an empty optional if the stream is empty
+  - eg.
+[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
 
 <br><br>
 
