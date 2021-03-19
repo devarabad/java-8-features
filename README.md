@@ -335,6 +335,14 @@ public interface Runnable {
   - eg.
 [StreamsGenerateExample](src/main/java/org/example/java/streams/StreamsGenerateExample.java)
 
+### Numeric Streams
+  - Represents the **primitive values** in a Stream
+    - IntStream
+    - LongStream
+    - DoubleStream
+  - eg.
+[NumericStreamsExample](src/main/java/org/example/java/streams/numeric/NumericStreamsExample.java)
+
 <br><br>
 
 
