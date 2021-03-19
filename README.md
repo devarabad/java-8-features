@@ -379,6 +379,31 @@ public interface Runnable {
   - eg.
 [NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
 
+#### boxed() (Boxing)
+  - Converts a primitive type to a Wrapper Class type
+  - eg.
+[NumericStreamsBoxedExample](src/main/java/org/example/java/streams/numeric/NumericStreamsBoxedExample.java)
+
+#### mapToObj()
+  - Converts each element in the numeric stream to some Object
+  - eg.
+[NumericStreamsMapToObjExample](src/main/java/org/example/java/streams/numeric/NumericStreamsMapToObjExample.java)
+
+#### mapToInt()
+  - Converts a numeric stream to an IntStream
+  - eg.
+[NumericStreamsMapToIntExample](src/main/java/org/example/java/streams/numeric/NumericStreamsMapToIntExample.java)
+
+#### mapToLong()
+  - Converts a numeric stream to a LongStream
+  - eg.
+[NumericStreamsMapToLongExample](src/main/java/org/example/java/streams/numeric/NumericStreamsMapToLongExample.java)
+
+#### mapToDouble()
+  - Converts a numeric stream to a DoubleStream
+  - eg.
+[NumericStreamsMapToDoubleExample](src/main/java/org/example/java/streams/numeric/NumericStreamsMapToDoubleExample.java)
+
 <br><br>
 
 
