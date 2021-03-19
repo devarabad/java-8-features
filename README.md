@@ -215,7 +215,9 @@ public interface Runnable {
 #### flatMap()
   - Convert(transform) one type to another as like `map()` method
   - Used in the context of Stream where each element in the stream represents multiple elements.
-    - Example: `Stream<List>`, `Stream<Array>`
+      ```
+      Stream<List>, Stream<Array>
+      ```
   - eg.
 [StreamsFlatMapExample](src/main/java/org/example/java/streams/StreamsFlatMapExample.java)
 
@@ -306,6 +308,35 @@ public interface Runnable {
 ### Short Circuiting
   - Does not have to iterate the whole stream to evaluate the result
 ![alt text](assets/java-8-stream-short-circuiting-functions.png "Short Circuiting Functions")
+
+<br><br>
+
+
+### Streams API Factory Methods
+
+#### of()
+  - Creates a stream of certain values passed to this method
+      ```
+      Stream<String> stringStream = Stream.of("Joe", "Peter", "Stewie");
+      ```
+  - eg.
+[StreamsOfExample](src/main/java/org/example/java/streams/StreamsOfExample.java)
+
+#### iterate()
+  - Used to create infinite streams
+      ```
+      Stream.iterate(1, x -> x * 2)
+      ```
+  - eg.
+[StreamsIterateExample](src/main/java/org/example/java/streams/StreamsIterateExample.java)
+
+#### generate()
+  - Used to create infinite streams
+      ```
+      Stream.generate(<Supplier>)
+      ```
+  - eg.
+[StreamsGenerateExample](src/main/java/org/example/java/streams/StreamsGenerateExample.java)
 
 <br><br>
 
