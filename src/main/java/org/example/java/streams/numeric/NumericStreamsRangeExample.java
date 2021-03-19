@@ -13,16 +13,16 @@ public class NumericStreamsRangeExample
      * range()
      */
     System.out.println("=== range() ===");
-    IntStream intStreamRangeCount = IntStream.range(1, 50);
-    System.out.println("Count: " + intStreamRangeCount.count());
+    IntStream intStreamRange = IntStream.range(1, 50);
+    System.out.println("Count: " + intStreamRange.count());
     IntStream.range(1, 50).forEach((value) -> System.out.print(value + ", "));
 
     /*
      * rangeClosed()
      */
     System.out.println("\n\n=== rangeClosed() ===");
-    IntStream intStreamRangeClosedCount = IntStream.rangeClosed(1, 50);
-    System.out.println("Count: " + intStreamRangeClosedCount.count());
+    IntStream intStreamRangeClosed = IntStream.rangeClosed(1, 50);
+    System.out.println("Count: " + intStreamRangeClosed.count());
     IntStream.rangeClosed(1, 50).forEach((value) -> System.out.print(value + ", "));
   }
 }
