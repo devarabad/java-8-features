@@ -309,9 +309,6 @@ public interface Runnable {
   - Does not have to iterate the whole stream to evaluate the result
 ![alt text](assets/java-8-stream-short-circuiting-functions.png "Short Circuiting Functions")
 
-<br><br>
-
-
 ### Streams API Factory Methods
 
 #### of()
