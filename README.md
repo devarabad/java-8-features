@@ -335,13 +335,49 @@ public interface Runnable {
   - eg.
 [StreamsGenerateExample](src/main/java/org/example/java/streams/StreamsGenerateExample.java)
 
-### Numeric Streams
+### Streams API Numeric Streams
   - Represents the **primitive values** in a Stream
     - IntStream
     - LongStream
     - DoubleStream
   - eg.
 [NumericStreamsExample](src/main/java/org/example/java/streams/numeric/NumericStreamsExample.java)
+
+#### range()
+  - Returns a sequential ordered IntStream from **startInclusive** (inclusive) to **endExclusive**
+      ```
+      IntStream.range(1,50) // Returns an IntStream of 49 elements, from 1 to 49
+      ```
+      | Stream        | Supported |
+      |---------------|:---------:|
+      | IntStream     | yes       |
+      | LongStream    | yes       |
+      | DoubleStream  | no        |
+  - eg.
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+
+#### rangeClosed()
+  - Returns a sequential ordered IntStream from **startInclusive** (inclusive) to **endInclusive**
+      ```
+      IntStream.rangeClosed(1,50) // Returns an IntStream of 50 elements, from 1 to 50
+      ```
+      | Stream        | Supported |
+      |---------------|:---------:|
+      | IntStream     | yes       |
+      | LongStream    | yes       |
+      | DoubleStream  | no        |
+  - eg.
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+
+#### count()
+  -
+  - eg.
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
+
+#### foreach()
+  -
+  - eg.
+[NumericStreamsRangeExample](src/main/java/org/example/java/streams/NumericStreamsRangeExample.java)
 
 <br><br>
 
