@@ -6,6 +6,16 @@ Java 8 Features
 - [Method Reference](#method-reference)
 - [Constructor Reference](#constructor-reference)
 - [Streams](#streams)
+  - [Usage](#usage)
+  - [How Stream API Works](#how-stream-api-works)
+  - [Collections Vs Streams](#collections-vs-streams)
+  - [Debugging Streams](#debugging-streams)
+  - [Intermediate Operations](#intermediate-operations)
+  - [Short Circuiting](#short-circuiting)
+  - [Factory Methods](#factory-methods)
+  - [Numeric Streams](#numeric-streams)
+  - [Parallel Streams](#parallel-streams)
+  - [How Parallel Stream Works](#how-parallel-stream-works)
 
 <br><br>
 
