@@ -204,7 +204,7 @@ public interface Runnable {
 * [CollectionsVsStreams](src/main/java/org/example/java/streams/CollectionsVsStreams.java)
 * [StreamsDebuggingExample](src/main/java/org/example/java/streams/StreamsDebuggingExample.java)
 
-### Streams API Operations
+### Intermediate Operations
 
 #### map()
   - Convert(transform) one type to another
@@ -226,11 +226,6 @@ public interface Runnable {
   - eg.
 [StreamsDistinctMapExample](src/main/java/org/example/java/streams/StreamsDistinctMapExample.java)
 
-#### count()
-  - Returns a long with the total no of elements in the stream
-  - eg.
-[StreamsCountExample](src/main/java/org/example/java/streams/StreamsCountExample.java)
-
 #### sorted()
   - Sort the elements in the stream
   - eg.
@@ -242,6 +237,25 @@ public interface Runnable {
   - Input to the filter is a **Predicate** Functional Interface
   - eg.
 [StreamsFilterExample](src/main/java/org/example/java/streams/StreamsFilterExample.java)
+
+#### limit()
+  - Limits the **"n"** number of elements to be processed in the stream
+  - eg.
+[StreamsLimitExample](src/main/java/org/example/java/streams/StreamsLimitExample.java)
+
+#### skip()
+  - Skips the **"n"** number of elements from the stream
+  - eg.
+[StreamsSkipExample](src/main/java/org/example/java/streams/StreamsSkipExample.java)
+
+### Terminal Operations
+  - collects data
+  - starts the whole stream pipeline
+
+#### count()
+  - Returns a long with the total no of elements in the stream
+  - eg.
+[StreamsCountExample](src/main/java/org/example/java/streams/StreamsCountExample.java)
 
 #### reduce()
   - Used to reduce the contents of a stream to a single value
@@ -264,16 +278,6 @@ public interface Runnable {
   - This is a **terminal operation**
   - eg.
 [StreamsMinExample](src/main/java/org/example/java/streams/StreamsMinExample.java)
-
-#### limit()
-  - Limits the **"n"** number of elements to be processed in the stream
-  - eg.
-[StreamsLimitExample](src/main/java/org/example/java/streams/StreamsLimitExample.java)
-
-#### skip()
-  - Skips the **"n"** number of elements from the stream
-  - eg.
-[StreamsSkipExample](src/main/java/org/example/java/streams/StreamsSkipExample.java)
 
 #### anyMatch()
   - Returns **true** if anyone of the element matches the predicate, otherwise false
@@ -305,11 +309,77 @@ public interface Runnable {
   - eg.
 [StreamsFindAnyExample](src/main/java/org/example/java/streams/StreamsFindFirstExample.java)
 
+#### collect()
+  - Produces the result as per the input passed to the `collect()` method
+  - Takes an input of type **Collector**
+  - eg.
+[StreamsCollectExample](src/main/java/org/example/java/streams/StreamsCollectExample.java)
+
+#### **Collectors**
+#### Collectors.joining()
+  - Collector performs the String concatenation on the elements in the stream
+  - eg.
+[StreamsJoiningExample](src/main/java/org/example/java/streams/collectors/StreamsJoiningExample.java)
+
+#### Collectors.counting()
+  - Collector returns the total number of elements as a result
+  - eg.
+[StreamsCountingExample](src/main/java/org/example/java/streams/collectors/StreamsCountingExample.java)
+
+#### Collectors.mapping()
+  - Collector applies a transformation function first and then collects the data in a collection (could be any type of collection)
+  - eg.
+[StreamsMappingExample](src/main/java/org/example/java/streams/collectors/StreamsMappingExample.java)
+
+#### Collectors.maxBy()
+  - Returns the max element based on the property passed to the comparator
+  - This collector is used in conjuction with comparator
+  - eg.
+[StreamsMaxByExample](src/main/java/org/example/java/streams/collectors/StreamsMaxByExample.java)
+
+#### Collectors.minBy()
+  - Returns the smallest element based on the property passed to the comparator
+  - This collector is used in conjuction with comparator
+  - eg.
+[StreamsMinByExample](src/main/java/org/example/java/streams/collectors/StreamsMinByExample.java)
+
+#### Collectors.summingInt(), Collectors.summingLong(), Collectors.summingDouble()
+  - This collector returns the sum as the result
+  - eg.
+[StreamsSummingExample](src/main/java/org/example/java/streams/collectors/StreamsSummingExample.java)
+
+#### Collectors.averagingInt(), Collectors.averagingLong(), Collectors.averagingDouble()
+  - This collector returns the average as the result
+  - eg.
+[StreamsAveragingExample](src/main/java/org/example/java/streams/collectors/StreamsAveragingExample.java)
+
+#### Collectors.groupingBy()
+  - Used to group the elements based on a property
+  - The output of the `groupingBy()` is going to be a `Map<K, V>`
+  - eg.
+[StreamsGroupingByExample](src/main/java/org/example/java/streams/collectors/StreamsGroupingByExample.java)
+
+#### Collectors.collectingAndThen()
+  - Adapts a Collector to perform an additional finishing transformation
+  - eg.
+[StreamsCollectingAndThenExample](src/main/java/org/example/java/streams/collectors/StreamsCollectingAndThenExample.java)
+
+#### Collectors.partitioningBy()
+  - Accepts a **Predicate** as an input
+  - The return type is going to be a `Map<K, V>`
+    - The key of the return type is going to be a **Boolean**
+  - eg.
+[StreamsPartitioningByExample](src/main/java/org/example/java/streams/collectors/StreamsPartitioningByExample.java)
+
+
+
+
+
 ### Short Circuiting
   - Does not have to iterate the whole stream to evaluate the result
 ![alt text](assets/java-8-stream-short-circuiting-functions.png "Short Circuiting Functions")
 
-### Streams API Factory Methods
+### Factory Methods
 
 #### of()
   - Creates a stream of certain values passed to this method
@@ -335,7 +405,7 @@ public interface Runnable {
   - eg.
 [StreamsGenerateExample](src/main/java/org/example/java/streams/StreamsGenerateExample.java)
 
-### Streams API Numeric Streams
+### Numeric Streams
   - Represents the **primitive values** in a Stream
     - IntStream
     - LongStream
@@ -361,16 +431,6 @@ public interface Runnable {
 
 #### sum()
   - Returns the sum of elements in the stream
-  - eg.
-[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
-
-#### max()
-  - Returns an **Optional** describing the maximum element of the stream, or an empty optional if the stream is empty
-  - eg.
-[NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
-
-#### min()
-  - Returns an **Optional** describing the minimum element of the stream, or an empty optional if the stream is empty
   - eg.
 [NumericStreamsAggregateExample](src/main/java/org/example/java/streams/numeric/NumericStreamsAggregateExample.java)
 
