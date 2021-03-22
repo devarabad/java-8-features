@@ -371,10 +371,6 @@ public interface Runnable {
   - eg.
 [StreamsPartitioningByExample](src/main/java/org/example/java/streams/collectors/StreamsPartitioningByExample.java)
 
-
-
-
-
 ### Short Circuiting
   - Does not have to iterate the whole stream to evaluate the result
 ![alt text](assets/java-8-stream-short-circuiting-functions.png "Short Circuiting Functions")
@@ -463,6 +459,27 @@ public interface Runnable {
   - Converts a numeric stream to a DoubleStream
   - eg.
 [NumericStreamsMapToDoubleExample](src/main/java/org/example/java/streams/numeric/NumericStreamsMapToDoubleExample.java)
+
+### Parallel Streams
+  - Splits the source data into multiple parts and then process them parallelly and then combine the result
+  ```
+    Sequential Stream
+      IntStream.rangeClosed(1, 1000).sum();
+
+    Parallel Stream
+      IntStream.rangeClosed(1, 1000).parallel().sum();
+  ```
+
+### How Parallel Stream Works
+  - Parallel Stream uses the **fork/join framework** that got introduced in Java 7
+    - The **fork/join framework** is an implementation of the ExecutorService interface that helps you take advantage of multiple processors. It is designed for work that can be broken into smaller pieces recursively.
+  - Number of threads created == number of processors available in the machine
+
+![alt text](assets/java-8-how-parallel-stream-works.png "How Parallel Stream Works")
+
+### Examples
+* [ParallelStreamsExample](src/main/java/org/example/java/streams/ParallelStreamsExample.java)
+* [ParallelStreamsPerformanceExample](src/main/java/org/example/java/streams/ParallelStreamsPerformanceExample.java)
 
 <br><br>
 
