@@ -479,6 +479,9 @@ public interface Runnable {
       IntStream.rangeClosed(1, 1000).parallel().sum();
   ```
 
+> <!> Be careful when using parallel streams specially on mutable objects as it may return different results.
+> Best to use parallel streams in stateless form.
+
 ### How Parallel Stream Works
   - Parallel Stream uses the **fork/join framework** that got introduced in Java 7
     - The **fork/join framework** is an implementation of the ExecutorService interface that helps you take advantage of multiple processors. It is designed for work that can be broken into smaller pieces recursively.
@@ -489,6 +492,8 @@ public interface Runnable {
 ### Examples
 * [ParallelStreamsExample](src/main/java/org/example/java/streams/ParallelStreamsExample.java)
 * [ParallelStreamsPerformanceExample](src/main/java/org/example/java/streams/ParallelStreamsPerformanceExample.java)
+* [ParallelStreamsStudentExample](src/main/java/org/example/java/streams/ParallelStreamsStudentExample.java)
+* [ParallelStreamsUseCaseExample](src/main/java/org/example/java/streams/ParallelStreamsUseCaseExample.java)
 
 <br><br>
 
