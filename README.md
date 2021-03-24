@@ -15,6 +15,7 @@ Java 8 Features
   - [Numeric Streams](#numeric-streams)
   - [Parallel Streams](#parallel-streams)
   - [How Parallel Stream Works](#how-parallel-stream-works)
+- [Optional](#optional)
 
 <br><br>
 
