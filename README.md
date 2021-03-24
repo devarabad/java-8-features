@@ -549,6 +549,21 @@ public interface Runnable {
   - eg.
 [OptionalOrElseThrowExample](src/main/java/org/example/java/optional/OptionalOrElseThrowExample.java)
 
+#### filter()
+  - If a value is present, and the value matches the given **Predicate**, return an **Optional** describing the value, otherwise return an **empty Optional**.
+  - eg.
+[OptionalFilterExample](src/main/java/org/example/java/optional/OptionalFilterExample.java)
+
+#### map()
+  - If a value is present, apply the provided mapping function to it, and if the result is non-null, return an **Optional** describing the result. Otherwise return an **empty Optional**
+  - eg.
+[OptionalMapExample](src/main/java/org/example/java/optional/OptionalMapExample.java)
+
+#### flatMap()
+  - If a value is present, apply the provided Optional-bearing mapping function to it, return that result, otherwise return an **empty Optional**
+  - eg.
+[OptionalFlatMapExample](src/main/java/org/example/java/optional/OptionalFlatMapExample.java)
+
 <br><br>
 
 
