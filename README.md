@@ -508,6 +508,16 @@ public interface Runnable {
 
 ### Operations
 
+#### isPresent()
+  - Returns **true** if there is a value present, otherwise **false**
+  - eg.
+[OptionalPresentExample](src/main/java/org/example/java/optional/OptionalPresentExample.java)
+
+#### ifPresent()
+  - If a value is present, invoke the specified consumer with the value, otherwise do nothing
+  - eg.
+[OptionalPresentExample](src/main/java/org/example/java/optional/OptionalPresentExample.java)
+
 #### ofNullable()
   - Returns an Optional describing the specified value, if non-null, otherwise returns an empty
   - eg.
