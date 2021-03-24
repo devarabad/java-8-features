@@ -569,50 +569,21 @@ public interface Runnable {
 <br><br>
 
 
-## Default Method in Interfaces
+## Default Method and Static Method in Interfaces
+
+### Default Method
   - Allows to add new methods that are automatically available in the implementations, thus there is no need to modify the implementing class
   - Enables you to add methods that accept lambda expressions as parameters to existing interfaces
   - You specify that a method definition in an interface is a default method with the **default** keyword at the beginning of the method signature
   - Default methods are implicitly **public**
   - Can be overriden in the Implementation class
 
-```
-...
-public interface TimeClient
-{
-  void setTime(int hour, int minute, int second);
-  void setDate(int day, int month, int year);
-  void setDateAndTime(int day, int month, int year, int hour, int minute, int second);
-  LocalDateTime getLocalDateTime();
-
-  static ZoneId getZoneId (String zoneString)
-  {
-    try
-    {
-      return ZoneId.of(zoneString);
-    }
-    catch (DateTimeException e)
-    {
-      System.err.println("Invalid time zone: " + zoneString + "; using default time zone instead.");
-      return ZoneId.systemDefault();
-    }
-  }
-
-  default ZonedDateTime getZonedDateTime(String zoneString)
-  {
-    return ZonedDateTime.of(getLocalDateTime(), getZoneId(zoneString));
-  }
-}
-```
-
-<br><br>
-
-
-## Static Method in Interfaces
+### Static Method
   - Like static methods in classes, you specify that a method definition in an interface is a static method with the **static** keyword at the beginning of the method signature
   - Static methods are implicitly **public**
   - Cannot be overriden by the Implementation class
 
+### Sample Implementation
 ```
 ...
 public interface TimeClient
@@ -641,6 +612,12 @@ public interface TimeClient
   }
 }
 ```
+
+### Examples
+  * [DefaultInterfaceExample](src/main/java/org/example/java/DefaultInterfaceExample.java)
+  * [SimpleTimeClientExample](src/main/java/org/example/java/SimpleTimeClientExample.java)
+    * [SimpleTimeClient (Implementation)](src/main/java/org/example/java/SimpleTimeClient.java)
+    * [TimeClient (Interface)](src/main/java/org/example/java/TimeClient.java)
 
 <br><br>
 
