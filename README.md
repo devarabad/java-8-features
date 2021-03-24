@@ -498,5 +498,48 @@ public interface Runnable {
 <br><br>
 
 
+## Optional
+  - represents a **Non-Null** value
+  - avoids **NulPointer Exception** and **Unnecessary Null Checks**
+
+### Examples
+  * [OptionalExample](src/main/java/org/example/java/optional/OptionalExample.java)
+
+### Operations
+
+#### ofNullable()
+  - Returns an Optional describing the specified value, if non-null, otherwise returns an empty
+  - eg.
+[OptionalOfEmptyNullableExample](src/main/java/org/example/java/optional/OptionalOfEmptyNullableExample.java)
+
+#### of()
+  - Returns an Optional with the specified present non-null value
+  - eg.
+[OptionalOfExample](src/main/java/org/example/java/optional/OptionalOfExample.java)
+
+#### empty()
+  - Returns an empty Optional instance
+  - No value is present for this Optional
+  - eg.
+[OptionalEmptyExample](src/main/java/org/example/java/optional/OptionalEmptyExample.java)
+
+#### orElse()
+  - Return the value if present, otherwise return the other value provided in the `orElse`
+  - eg.
+[OptionalOrElseExample](src/main/java/org/example/java/optional/OptionalOrElseExample.java)
+
+#### orElseGet()
+  - Return the value if present, otherwise invoke other and return the result of that invocation `Supplier.get()`
+  - eg.
+[OptionalOrElseGetExample](src/main/java/org/example/java/optional/OptionalOrElseGetExample.java)
+
+#### orElseThrow()
+  - Return the contained value, if present, otherwise throw an exception to be created by the provided supplier
+  - eg.
+[OptionalOrElseThrowExample](src/main/java/org/example/java/optional/OptionalOrElseThrowExample.java)
+
+<br><br>
+
+
 ## References
   - https://deloittedevelopment.udemy.com/course/modern-java-learn-java-8-features-by-coding-it
