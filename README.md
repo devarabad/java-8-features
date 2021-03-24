@@ -16,6 +16,8 @@ Java 8 Features
   - [Parallel Streams](#parallel-streams)
   - [How Parallel Stream Works](#how-parallel-stream-works)
 - [Optional](#optional)
+- [Default Method in Interfaces](#default-method-in-interfaces)
+- [Static Method in Interfaces](#static-method-in-interfaces)
 
 <br><br>
 
