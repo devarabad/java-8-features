@@ -16,8 +16,7 @@ Java 8 Features
   - [Parallel Streams](#parallel-streams)
   - [How Parallel Stream Works](#how-parallel-stream-works)
 - [Optional](#optional)
-- [Default Method in Interfaces](#default-method-in-interfaces)
-- [Static Method in Interfaces](#static-method-in-interfaces)
+- [Default and Static Method in Interfaces](#default-and-static-method-in-interfaces)
 
 <br><br>
 
@@ -569,7 +568,7 @@ public interface Runnable {
 <br><br>
 
 
-## Default Method and Static Method in Interfaces
+## Default and Static Method in Interfaces
 
 ### Default Method
   - Allows to add new methods that are automatically available in the implementations, thus there is no need to modify the implementing class
