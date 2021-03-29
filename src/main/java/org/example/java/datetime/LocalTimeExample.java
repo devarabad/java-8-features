@@ -16,6 +16,7 @@ public class LocalTimeExample
 
     /*
      * of() - Obtains an instance of LocalTime from an hour, minute and second
+     *      - @see other arguments
      */
     LocalTime localTimeOf       = LocalTime.of(23,33);
     LocalTime localTimeWithSec  = LocalTime.of(23,33, 33);

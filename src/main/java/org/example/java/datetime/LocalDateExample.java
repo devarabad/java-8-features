@@ -22,6 +22,7 @@ public class LocalDateExample
 
     /*
      * of() - Obtains an instance of LocalDate from a year, month and day
+     *      - @see other arguments
      */
     LocalDate localDateOf = LocalDate.of(2021, 3, 29);
     System.out.println("localDate of() : " + localDateOf);
