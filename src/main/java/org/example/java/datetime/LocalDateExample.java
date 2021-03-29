@@ -36,7 +36,7 @@ public class LocalDateExample
     System.out.println("localDate ofYearDay() : " + localDateOfYearDay2);
 
     /*
-     * Getting LocalDate values
+     * Getting the date values from LocalDate instance
      */
     int year                    = localDate.getYear();
     int monthValue              = localDate.getMonthValue();
@@ -52,16 +52,16 @@ public class LocalDateExample
     String eraDisplayName       = era.getDisplayName(TextStyle.FULL, Locale.getDefault());
 
     System.out.println("Year                      : " + year);
-    System.out.println("Month Value               : " + monthValue);
+    System.out.println("Month                     : " + monthValue);
     System.out.println("Day of Month              : " + dayOfMonth);
     System.out.println("Day of Year               : " + dayOfYear);
     System.out.println("Month DisplayName         : " + monthDisplayName);
-    System.out.println("Day Of Week Display Name  : " + dayOfWeekDisplayName);
-    System.out.println("Day Of Week using get()   : " + dayOfWeekValue);
+    System.out.println("Day of Week               : " + dayOfWeekValue);
+    System.out.println("Day of Week Display Name  : " + dayOfWeekDisplayName);
     System.out.println("Era Display Name          : " + eraDisplayName);
 
     /*
-     * Modifying LocalDate values
+     * Modifying date values from LocalDate instance
      *
      * Note:
      *   - LocalDate is immutable, so it will not change the actual instance created initially
@@ -78,7 +78,7 @@ public class LocalDateExample
     System.out.println("localDate + days                        : " + newLocalDatePlusDays);
     System.out.println("localDate + months                      : " + newLocalDatePlusMos);
     System.out.println("localDate - years                       : " + newLocalDateMinusYrs);
-    System.out.println("localDate with ChronoField              : " + newLocalDateWithChronoField);
+    System.out.println("localDate with ChronoField (YEAR)       : " + newLocalDateWithChronoField);
     System.out.println("localDate with ChronoField (DayOfWeek)  : " + newLocalDateWithChronoField.getDayOfWeek());
     System.out.println("localDate with Temporal Adjusters       : " + newLocalDateWithTemporalAdjusters);
     System.out.println("localDate - ChronoUnit                  : " + newLocalDateMinus);

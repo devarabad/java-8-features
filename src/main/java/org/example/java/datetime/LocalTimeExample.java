@@ -32,7 +32,7 @@ public class LocalTimeExample
     System.out.println("localTime toSecondOfDay : " + localTimeToSecondOfDay);
 
     /*
-     * Getting LocalDate values
+     * Getting the time values from LocalTime instance
      */
     int hour            = localTime.getHour();
     int minute          = localTime.getMinute();
@@ -43,11 +43,11 @@ public class LocalTimeExample
     System.out.println("Hour              : " + hour);
     System.out.println("Minute            : " + minute);
     System.out.println("Second            : " + second);
-    System.out.println("Nano second       : " + nanoSecond);
-    System.out.println("Clock hour of day : " + clockHourOfDay);
+    System.out.println("Nano Second       : " + nanoSecond);
+    System.out.println("Clock Hour of Day : " + clockHourOfDay);
 
     /*
-     * Modifying LocalTime values
+     * Modifying time values from LocalTime instance
      *
      * Note:
      *   - LocalTime is immutable, so it will not change the actual instance created initially
