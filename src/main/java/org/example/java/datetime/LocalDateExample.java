@@ -88,7 +88,7 @@ public class LocalDateExample
     boolean isLeapYear            = localDate.isLeapYear();
     boolean isEqualLocalDate      = localDate.isEqual(localDateOf);
     boolean isBeforeLocalDate     = localDate.isBefore(localDateOf);
-    boolean isAfterLocalDate      = localDate.isBefore(localDateOf);
+    boolean isAfterLocalDate      = localDate.isAfter(localDateOf);
 
     System.out.println("localDate isLeapYear()         : " + isLeapYear);
     System.out.println("2022 isLeapYear()              : " + LocalDate.ofYearDay(2024, 1).isLeapYear());
@@ -96,7 +96,7 @@ public class LocalDateExample
     System.out.println(localDate + " isBefore " + localDateOf + " : " + isBeforeLocalDate);
     System.out.println(localDate + " isAfter  " + localDateOf + " : " + isAfterLocalDate);
 
-    // Since this is a LocalDate instance and not a LocalTime, it returns false as ChronoUnit.HOURS is not supported by LocalDate.
+    // Since this is a LocalDate instance and not a LocalTime, it returns false as ChronoUnit.HOURS is not supported by LocalDate
     boolean isSupportedChronoUnitHours  = localDate.isSupported(ChronoUnit.HOURS);
     boolean isSupportedChronoUnitYears  = localDate.isSupported(ChronoUnit.YEARS);
 
