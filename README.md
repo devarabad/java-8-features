@@ -613,10 +613,27 @@ public interface TimeClient
 ```
 
 ### Examples
-  * [DefaultInterfaceExample](src/main/java/org/example/java/DefaultInterfaceExample.java)
-  * [SimpleTimeClientExample](src/main/java/org/example/java/SimpleTimeClientExample.java)
-    * [SimpleTimeClient (Implementation)](src/main/java/org/example/java/SimpleTimeClient.java)
-    * [TimeClient (Interface)](src/main/java/org/example/java/TimeClient.java)
+* [DefaultInterfaceExample](src/main/java/org/example/java/DefaultInterfaceExample.java)
+* [SimpleTimeClientExample](src/main/java/org/example/java/SimpleTimeClientExample.java)
+  * [SimpleTimeClient (Implementation)](src/main/java/org/example/java/SimpleTimeClient.java)
+  * [TimeClient (Interface)](src/main/java/org/example/java/TimeClient.java)
+
+<br><br>
+
+
+## New Date/Time APIs
+  * `LocalDate`, `LocalTime`, and `LocalDateTime` and part of the `java.time` package
+  * All the new time libraries are **Immutable**
+  * Supporting classes like **Instant**, **Duration**, **Period** and etc.
+    ```
+    LocalDate localDate         = LocalDate.now();
+    LocalTime localTime         = LocalTime.now();
+    LocalDateTime localDateTime = LocalDateTime.now();
+    ```
+
+### Examples
+* [NewDateTimeExample](src/main/java/org/example/java/datetime/NewDateTimeExample.java)
+* [LocalDateExample](src/main/java/org/example/java/datetime/LocalDateExample.java)
 
 <br><br>
 
