@@ -24,7 +24,7 @@ public class InstantExample
     Instant instantTo         = Instant.now();
     Duration durationInstant  = Duration.between(instant, instantTo);
     long nanoSecondBetween    = durationInstant.getNano();
-    
+
     System.out.println("Difference : " + nanoSecondBetween);
   }
 }
