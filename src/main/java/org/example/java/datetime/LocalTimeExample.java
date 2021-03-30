@@ -32,6 +32,13 @@ public class LocalTimeExample
     System.out.println("localTime toSecondOfDay : " + localTimeToSecondOfDay);
 
     /*
+     * until() - Calculates the amount of time until another time in terms of the specified unit
+     *         - same with Duration.between()
+     */
+    long durationUntil = localTime.until(localTimeOf, ChronoUnit.MINUTES);
+    System.out.println("Minutes until " + localTime + " : " + durationUntil);
+
+    /*
      * Getting the time values from LocalTime instance
      */
     int hour            = localTime.getHour();

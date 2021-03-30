@@ -3,6 +3,7 @@ package org.example.java.datetime;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.Period;
 import java.time.chrono.Era;
 import java.time.format.TextStyle;
 import java.time.temporal.ChronoField;
@@ -34,6 +35,16 @@ public class LocalDateExample
     LocalDate localDateOfYearDay2 = LocalDate.ofYearDay(2021, 2);
     System.out.println("localDate ofYearDay() : " + localDateOfYearDay);
     System.out.println("localDate ofYearDay() : " + localDateOfYearDay2);
+
+    /*
+     * until() - Calculates the period between this date and another date as a Period
+     *         - same with Period.between()
+     */
+    Period periodUntil    = localDateOf.until(localDate);
+    int noOfDaysUntil     = periodUntil.getDays();
+    int noOfYearsUntil    = periodUntil.getYears();
+    System.out.println("Days until " + localDate + " : " + noOfDaysUntil);
+    System.out.println("Years until " + localDate + " : " + noOfYearsUntil);
 
     /*
      * Getting the date values from LocalDate instance
