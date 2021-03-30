@@ -706,6 +706,29 @@ ZoneId        : Asia/Manila
 * [UtilDateToLocalDateTimeExample](src/main/java/org/example/java/datetime/UtilDateToLocalDateTimeExample.java)
 * [SqlDateToLocalDateTimeExample](src/main/java/org/example/java/datetime/SqlDateToLocalDateTimeExample.java)
 
+### DateTimeFormatter
+  - Used to parse and format the **LocalDate**, **LocalTime** and **LocalDateTime**
+  - see [Documentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
+
+**parse** - Converts a String to a LocalDate/LocalTime/LocalDateTime
+
+**format** - Converts a LocalDate/LocalTime/LocalDateTime to a String
+```
+LocalDate date              = LocalDate.now();
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+String text                 = date.format(formatter);
+LocalDate parsedDate        = LocalDate.parse(text, formatter);
+```
+
+#### Predefined Formatters
+![alt text](assets/java-8-predefined-formatters.png "Predefined Formatters")
+
+#### Patterns for Formatting and Parsing
+![alt text](assets/java-8-patterns-for-formatting-and-parsing.png "Patterns for Formatting and Parsing")
+
+#### Examples
+* [DateTimeFormatterExample](src/main/java/org/example/java/datetime/DateTimeFormatterExample.java)
+
 <br><br>
 
 
