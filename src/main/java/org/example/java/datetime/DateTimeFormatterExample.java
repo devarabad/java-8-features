@@ -25,7 +25,7 @@ public class DateTimeFormatterExample
     LocalTime parsedLocalTime         = LocalTime.parse(ltText, ltFormatter);
 
     LocalDateTime localDateTime       = LocalDateTime.now();
-    DateTimeFormatter ldtFormatter    = DateTimeFormatter.ofPattern("yyyy/MM/dd H:mm:ss:n");
+    DateTimeFormatter ldtFormatter    = DateTimeFormatter.ofPattern("yyyy/MM/dd'T'HH:mm:ss:n");
     String ldtText                    = localDateTime.format(ldtFormatter);
     LocalDateTime parsedLocalDateTime = LocalDateTime.parse(ldtText, ldtFormatter);
 
@@ -38,7 +38,7 @@ public class DateTimeFormatterExample
     System.out.println("Parsed LocalTime          : " + parsedLocalTime);
 
     System.out.println("LocalDateTime             : " + localDateTime);
-    System.out.println("LocalDateTime Text Format : " + ldText);
+    System.out.println("LocalDateTime Text Format : " + ldtText);
     System.out.println("Parsed LocalDateTime      : " + parsedLocalDateTime);
 
     /**
