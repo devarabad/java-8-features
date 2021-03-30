@@ -2,6 +2,7 @@ package org.example.java.datetime;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -14,18 +15,27 @@ public class DateTimeFormatterExample
      * Basic Usage
      */
     LocalDate localDate               = LocalDate.now();
-    DateTimeFormatter ldFormatter     = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    DateTimeFormatter ldFormatter     = DateTimeFormatter.ofPattern("yyyy/MM/dd");
     String ldText                     = localDate.format(ldFormatter);
     LocalDate parsedLocalDate         = LocalDate.parse(ldText, ldFormatter);
 
+    LocalTime localTime               = LocalTime.now();
+    DateTimeFormatter ltFormatter     = DateTimeFormatter.ofPattern("H:mm:ss:n");
+    String ltText                     = localTime.format(ltFormatter);
+    LocalTime parsedLocalTime         = LocalTime.parse(ltText, ltFormatter);
+
     LocalDateTime localDateTime       = LocalDateTime.now();
-    DateTimeFormatter ldtFormatter    = DateTimeFormatter.ofPattern("yyyy-MM-dd H:mm:ss");
+    DateTimeFormatter ldtFormatter    = DateTimeFormatter.ofPattern("yyyy/MM/dd H:mm:ss:n");
     String ldtText                    = localDateTime.format(ldtFormatter);
     LocalDateTime parsedLocalDateTime = LocalDateTime.parse(ldtText, ldtFormatter);
 
     System.out.println("LocalDate                 : " + localDate);
     System.out.println("LocalDate Text Format     : " + ldText);
     System.out.println("Parsed LocalDate          : " + parsedLocalDate);
+
+    System.out.println("LocalTime                 : " + localTime);
+    System.out.println("LocalTime Text Format     : " + ltText);
+    System.out.println("Parsed LocalTime          : " + parsedLocalTime);
 
     System.out.println("LocalDateTime             : " + localDateTime);
     System.out.println("LocalDateTime Text Format : " + ldText);
