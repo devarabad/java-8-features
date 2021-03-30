@@ -637,6 +637,42 @@ public interface TimeClient
 * [LocalTimeExample](src/main/java/org/example/java/datetime/LocalTimeExample.java)
 * [LocalDateTimeExample](src/main/java/org/example/java/datetime/LocalDateTimeExample.java)
 
+### Period
+  - Period is a date-based representation of time in **Days, Months, and Years**
+  - Compatible with **LocalDate**
+  - It represents a **Period of Time** not just a specific date and time
+```
+Period periodOfDays   = Period.ofDays(10);  // represents a Period of 10 days
+Period periodOfYears  = Period.ofYears(20); // represents a Period of 20 years
+```
+
+#### Use Case
+  - Mainly used to calculate the difference between two dates
+```
+LocalDate localDateFrom = LocalDate.of(2021, 01, 01);
+LocalDate localDateTo   = LocalDate.of(2021, 01, 31);
+
+// Calculates the difference between the two dates
+Period period           = Period.between(localDateFrom, localDateTo);
+```
+
+### Duration
+  - Duration is a time-based representation of time in **Hours, Minutes, Seconds and Nano Seconds**
+  - Compatible with **LocalTime** and **LocalDateTime**
+  - It represents a **Duration of Time** not just a specific time
+```
+Duration durationOfHours    = Duration.ofHours(3);    // represents the duration of 3 hours
+Duration durationOfMinutes  = Duration.ofHMinutes(3); // represents the duration of 3 minutes
+```
+
+#### Use Case
+  - It can be used to calculate the difference between the time objects such as **LocalTime** and **LocalDateTime**
+```
+LocalTime localTimeFrom = LocalTime.of(7, 30);
+LocalTime localTimeTo   = LocalTime.of(8,20);
+Duration duration       = Duration.between(localTimeFrom, localTimeTo);
+```
+
 <br><br>
 
 
