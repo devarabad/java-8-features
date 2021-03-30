@@ -91,9 +91,9 @@ public class LocalDateTimeExample
     /*
      * Convert LocalDate to LocalDateTime - atTime()
      */
-    LocalDate localDate                         = LocalDate.now();
-    LocalDateTime frLocalDateToLDT               = localDate.atTime(LocalTime.now());
-    LocalDateTime frLocalDateToLDTWithHrMinSecNs = localDate.atTime(23, 55, 30, 978);
+    LocalDate localDate                           = LocalDate.now();
+    LocalDateTime frLocalDateToLDT                = localDate.atTime(LocalTime.now());
+    LocalDateTime frLocalDateToLDTWithHrMinSecNs  = localDate.atTime(23, 55, 30, 978);
 
     System.out.println("localDate                         : " + localDate);
     System.out.println("localDateTime atTime(LocalTime)   : " + frLocalDateToLDT);
