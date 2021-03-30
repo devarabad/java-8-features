@@ -681,6 +681,7 @@ Duration duration       = Duration.between(localTimeFrom, localTimeTo);
 
 ### Instant
   - Represent the time in a machine readable format
+  - The Instant class represents a moment on the timeline in **UTC** with a resolution of **nanoseconds**
 ```
 Instant instant = Instant.now();
 ```
@@ -719,6 +720,10 @@ DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 String text                 = date.format(formatter);
 LocalDate parsedDate        = LocalDate.parse(text, formatter);
 ```
+
+#### ISO 8601
+  - The **`T`** separates the date portion from the time-of-day portion
+  - The **`Z`** on the end means UTC (that is, an offset-from-UTC of zero hours-minutes-seconds)
 
 #### Predefined Formatters
 ![alt text](assets/java-8-predefined-formatters.png "Predefined Formatters")
