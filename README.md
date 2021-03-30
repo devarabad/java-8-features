@@ -679,6 +679,16 @@ Duration duration       = Duration.between(localTimeFrom, localTimeTo);
 #### Examples
 * [ComparingTimeDurationExample](src/main/java/org/example/java/datetime/ComparingTimeDurationExample.java)
 
+### Instant
+  - Represent the time in a machine readable format
+```
+Instant instant = Instant.now();
+```
+> </> Represents the time in seconds from January 01, 1970 **(Epoch)** to current time as a huge number
+
+#### Examples
+* [InstantExample](src/main/java/org/example/java/datetime/InstantExample.java)
+
 <br><br>
 
 
