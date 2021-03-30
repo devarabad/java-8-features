@@ -689,6 +689,23 @@ Instant instant = Instant.now();
 #### Examples
 * [InstantExample](src/main/java/org/example/java/datetime/InstantExample.java)
 
+### Time Zones
+  - `ZonedDateTime`, `ZoneId`, and `ZoneOffset`
+
+**ZonedDateTime** - Represents the date and time with its time zone
+```
+2021-03-30T09:58:31.868+08:00[Asia/Manila]
+
+ZonedDateTime : 2021-03-30T09:58:31.868+08:00[Asia/Manila]
+ZoneOffset    : +08:00
+ZoneId        : Asia/Manila
+```
+
+#### Examples
+* [ZonedDateTimeExample](src/main/java/org/example/java/datetime/ZonedDateTimeExample.java)
+* [UtilDateToLocalDateTimeExample](src/main/java/org/example/java/datetime/UtilDateToLocalDateTimeExample.java)
+* [SqlDateToLocalDateTimeExample](src/main/java/org/example/java/datetime/SqlDateToLocalDateTimeExample.java)
+
 <br><br>
 
 
