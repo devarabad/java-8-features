@@ -17,6 +17,7 @@ Java 8 Features
   - [How Parallel Stream Works](#how-parallel-stream-works)
 - [Optional](#optional)
 - [Default and Static Method in Interfaces](#default-and-static-method-in-interfaces)
+- [New Date/Time APIs](#new-date/time-apis)
 
 <br><br>
 
