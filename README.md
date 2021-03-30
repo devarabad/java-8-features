@@ -656,6 +656,9 @@ LocalDate localDateTo   = LocalDate.of(2021, 01, 31);
 Period period           = Period.between(localDateFrom, localDateTo);
 ```
 
+#### Examples
+* [ComparingDatePeriodExample](src/main/java/org/example/java/datetime/ComparingDatePeriodExample.java)
+
 ### Duration
   - Duration is a time-based representation of time in **Hours, Minutes, Seconds and Nano Seconds**
   - Compatible with **LocalTime** and **LocalDateTime**
@@ -672,6 +675,9 @@ LocalTime localTimeFrom = LocalTime.of(7, 30);
 LocalTime localTimeTo   = LocalTime.of(8,20);
 Duration duration       = Duration.between(localTimeFrom, localTimeTo);
 ```
+
+#### Examples
+* [ComparingTimeDurationExample](src/main/java/org/example/java/datetime/ComparingTimeDurationExample.java)
 
 <br><br>
 
